@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="tc ma0 pa4 min-vh-100">
       <Searching product={productDetails} />
-      <Search details={initialDetails} />
+      {/* <Search details={initialDetails} /> */}
     </div>
   );
 }
