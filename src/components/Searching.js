@@ -27,12 +27,6 @@ function Searching({ product }) {
         ></input>
         <button className="search-btn" onClick={handleSearchClick}>🔍</button>
       </div>
-      {/* <div className="filter-btn-sec">
-        <button className="filter-btn" onClick={handleFilter}>Pant</button>
-        <button className="filter-btn" onClick={handleFilter}>Shirt</button>
-        <button className="filter-btn" onClick={handleFilter}>Shoes</button>
-        <button className="filter-btn" onClick={handleReset}>Reset All</button>
-      </div> */}
 
       <div className="c-card-sec">
         {products.map((product) => {
@@ -42,7 +36,7 @@ function Searching({ product }) {
             <div className="c-card" key={product.id}>
               <h1>Name : {product.name}</h1>
               <h4>Category : {product.category}</h4>
-            </div>
+            </div> 
 
           );
         })}
