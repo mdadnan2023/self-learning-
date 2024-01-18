@@ -1,28 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import Search from "./components/Search";
-import initialDetails from "./data/initialDetails";
 import productDetails from "./data/productDetails";
 import Searching from "./components/Searching";
 import Buttons from "./components/Button";
 
 function App() {
-
+  const [item, setItem] = useState(productDetails);
   const menuItems = [...new Set(productDetails.map((val) => val.category))];
-  // const filterItem = ((currcat) =>{
-  //   const newItem = productDetails.filter((newval) =>{
-  //     return newval.category === currcat;
-  //   });
-  //   // setItem(newItem);
-  // })
+
+  const filterItem = (curcat) => {
+    const newItem = productDetails.filter((newVal) => {
+      return newVal.category === curcat;
+    });
+    setItem(newItem);
+  };
 
   return (
     <div className="tc ma0 pa4 min-vh-100">
-      <Searching product={productDetails} />
-      <Buttons menuItems ={menuItems} />
-      {/* <Search details={initialDetails} /> */}
+      <Buttons menuItems={menuItems} filterItem={filterItem} setItem={setItem} />
+      <Searching product={item} />
     </div>
   );
 }
 
 export default App;
+
