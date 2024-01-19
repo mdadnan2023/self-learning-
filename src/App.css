@@ -22,7 +22,7 @@
     flex-wrap: wrap;
 }
 .c-card{
-    width: 200px;
+    width: 16rem;
     height: 200px;
     border: 1px solid black;
     display: flex;
