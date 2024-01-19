@@ -19,6 +19,7 @@ function App() {
     <div className="tc ma0 pa4 min-vh-100">
       <Buttons menuItems={menuItems} filterItem={filterItem} setItem={setItem} />
       <Searching product={item} />
+      
     </div>
   );
 }
