@@ -36,12 +36,15 @@ function Searching({ product }) {
         {product.map((product) => {
           return (
             <div className="card" style={{ width: "18rem" }} key={product.id}>
-              <img class="card-img-top" src={"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"} alt={product.title} className="photo w-100" />
-              <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">{product.category}</h6>
-                <h5 class="card-title">{product.name}</h5>
-                <p class="card-text">{product.description}</p>
-                <button type="button" class="btn btn-success">View More</button>
+              <img class="photo" src={product.img} alt={product.title} />
+              <div className="card-body">
+                <h6 className="card-subtitle mb-2 text-muted">{product.category}</h6>
+                <h5 className="card-title">{product.name}</h5>
+                <p className="card-text">{product.description}</p>
+                <div className="btn-sec">
+                  <button type="button" className="btn btn-success">BUY NOW</button>
+                  <button type="button" className="btn btn-success">ADD TO CART</button>
+                </div>
               </div>
             </div>
           );
