@@ -1,4 +1,11 @@
-.my-style{
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.font-family {
+    font-family: 'Asul', serif;
+    font-family: 'Nunito', sans-serif;  
+}
+
+.my-style {
     margin-Left: 60px;
     margin-top: 20px;
     font-weight: 700;
@@ -7,26 +14,91 @@
     position: relative;
     font-size: 20px;
     width: 250px;
-    
+
 }
-.search-btn{
+
+.search-btn {
     position: absolute;
     right: 0;
     top: 0px;
 }
-.c-card-sec{
+
+.c-card-sec {
     width: 100%;
     margin-top: 100px;
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
 }
-.c-card{
-    width: 16rem;
-    height: 200px;
+
+.card {
+    height: fit-content;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 8px;
+}
+
+.card-subtitle {
+    text-transform: uppercase;
+    text-align: start;
+    font-weight: 600;
+    color: #DE3163!important;
+}
+
+.pagecontainer {
+    padding-top: 500px;
+}
+.btn-sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-success {
+    background-color: #DE3163;
+    border: #DE3163;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-success:hover {
+    background-color: #DE3163;
+}
+.photo{
+    border-bottom: 1px solid #101010;
+}
+
+.card-title {
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.card-text{
+    text-align: start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.icon-btn i{
+    font-size: 16px;
+    color: #DE3163;
+}
+.icon-btn{
+    color: #DE3163 !important;
 }
