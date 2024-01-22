@@ -1,19 +1,3 @@
-// const productDetails = [
-//   "blue pant",
-//   "black pant",
-//   "blue shirt",
-//   "black shoes",
-//   "brown shoes",
-//   "white pant",
-//   "white shoes",
-//   "red shirt",
-//   "gray pant",
-//   "white shirt",
-//   "golden shoes",
-//   "dark pant",
-//   "pink shirt",
-//   "yellow pant",
-// ];
 
 const productDetails = [
   {

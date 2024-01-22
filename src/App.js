@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
 import productDetails from "./data/productDetails";
-import Searching from "./components/Searching";
+import Filtering from "./components/Filtering";
 import Buttons from "./components/Button";
 import Navbar from "./components/navbar/navbar.jsx";
+import Searching from "./components/Searching.js";
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
       <Navbar/>
       <div className="tc ma0 pa4 min-vh-100">
         <Buttons menuItems={menuItems} filterItem={filterItem} setItem={setItem} />
-        <Searching product={item} />
+        <Searching product={item}/>
+        <Filtering product={item} />
       </div>
     </div>
   );
