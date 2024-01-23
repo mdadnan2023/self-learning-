@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import productDetails from "../../data/productDetails.js";
 import Filtering from "../Filtering.js";
 import Buttons from "../Button.js";
-import Searching from "../Searching.js";
+// import Searching from "../Searching.js";
 
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
           filterItem={filterItem}
           setItem={setItem}
         />
-        <Searching product={item} />
+
         <Filtering product={item} />
       </div>
     </div>
