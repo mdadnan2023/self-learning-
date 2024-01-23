@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './navbar.css'
 import logo from "../assets/logo.svg"
+import { NavLink } from 'react-router-dom';
 
 export default class Navbar extends Component {
 
@@ -19,10 +20,10 @@ export default class Navbar extends Component {
                         <img class="logo-img" src={logo} alt="logo" />
                     </figure>
                     <ul>
-                        <li><a href="/soon">Home</a></li>
-                        <li><a href="/soon">Products</a></li>
-                        <li><a href="/soon">About Us</a></li>
-                        <li><a href="/soon">Contact Us</a></li>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/product">Products</NavLink></li>
+                        <li><NavLink to="/about">About Us</NavLink></li>
+                        <li><NavLink to="/contact">Contact Us</NavLink></li>
                         <li><a className='icon-btn' href="/soon"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
                         <li><a className='icon-btn' href="/soon"><i class="fa-regular fa-user"></i>Login</a></li>
 
