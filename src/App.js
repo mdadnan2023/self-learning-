@@ -1,34 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import productDetails from "./data/productDetails";
-import Filtering from "./components/Filtering";
-import Buttons from "./components/Button";
+import Home from "./components/homepage/homepage.js";
 import Navbar from "./components/navbar/navbar.jsx";
-import Searching from "./components/Searching.js";
-
 
 function App() {
-  const [item, setItem] = useState(productDetails);
-  const menuItems = [...new Set(productDetails.map((val) => val.category))];
-
-  const filterItem = (curcat) => {
-    const newItem = productDetails.filter((newVal) => { 
-      return newVal.category === curcat;
-    });
-    setItem(newItem);
-  };
-
   return (
     <div>
-      <Navbar/>
-      <div className="tc ma0 pa4 min-vh-100">
-        <Buttons menuItems={menuItems} filterItem={filterItem} setItem={setItem} />
-        <Searching product={item}/>
-        <Filtering product={item} />
-      </div>
+      <Navbar />
+      <Home />
     </div>
   );
 }
 
 export default App;
 
+// https://codesandbox.io/p/sandbox/react-router-product-detail-pages-dynamic-links-tmcjc?file=%2Fsrc%2FProductDetail.js
