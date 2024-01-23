@@ -7,16 +7,20 @@ import About from "./components/About.js";
 import Contact from "./components/Contact.js";
 import Searching from "./components/Searching.js";
 import productDetails from "./data/productDetails.js";
+import Error from "./components/Error.js";
+
 
 function App() {
+
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product" element={<Searching />} />
+        <Route path="/product" element={<Searching product={productDetails}/>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );

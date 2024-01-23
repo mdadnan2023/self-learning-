@@ -26,7 +26,6 @@ export default class Navbar extends Component {
                         <li><NavLink to="/contact">Contact Us</NavLink></li>
                         <li><a className='icon-btn' href="/soon"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
                         <li><a className='icon-btn' href="/soon"><i class="fa-regular fa-user"></i>Login</a></li>
-
                     </ul>
 
                     <i className={this.state.hamburger ? "fas fa-times" : "fas fa-bars"} id="hamburger"
@@ -34,13 +33,12 @@ export default class Navbar extends Component {
                             this.setState({ hamburger: !this.state.hamburger });
                         }}></i>
                     <ul className={this.state.hamburger ? "hamburgerMenu active" : "hamburgerMenu"}>
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>Hire Devloper</li>
-                        <li>Our Works</li>
-                        <li>Contact</li>
-                        <li>About</li>
-                        <li>Inquire</li>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/product">Products</NavLink></li>
+                        <li><NavLink to="/about">About Us</NavLink></li>
+                        <li><NavLink to="/contact">Contact Us</NavLink></li>
+                        <li><a className='icon-btn' href="/soon"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                        <li><a className='icon-btn' href="/soon"><i class="fa-regular fa-user"></i>Login</a></li>
                     </ul>
                 </nav>
             </div>
