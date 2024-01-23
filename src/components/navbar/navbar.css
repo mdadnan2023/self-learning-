@@ -8,6 +8,7 @@
     width: 100%;
     z-index: 50;
     border-bottom: 1px solid black;
+    padding: 10px 0;
 }
 .wholenav.overflow{
     position: fixed; 
