@@ -20,7 +20,7 @@ function Searching({ product }) {
     setProducts(filterBySearch);
   }
   return (
-    <div>
+    <div className='tc ma0 pa4 min-vh-100'>
       <div className="my-style">
         <input
           placeholder="search..."
