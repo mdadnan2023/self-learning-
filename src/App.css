@@ -102,3 +102,74 @@
 .icon-btn{
     color: #DE3163 !important;
 }
+
+
+
+/* About us page */
+
+.about-us-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .about-us-container h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .about-us-container h3 {
+    color: #555;
+  }
+  
+  p {
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .about-us-container .closing-statement {
+    font-style: italic;
+    margin-top: 20px;
+    color: #888;
+    text-align: center;
+  }
+  
+  /* Add some spacing between sections */
+  .about-us-container h2,
+  h3,
+  p {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the headings differently */
+  .about-us-container h2 {
+    font-size: 28px;
+  }
+  
+  .about-us-container h3 {
+    font-size: 24px;
+  }
+  
+  /* Style the paragraphs */
+  .about-us-container p {
+    font-size: 16px;
+  }
+  
+  /* Style links */
+  .about-us-container a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .about-us-container a:hover {
+    color: #0056b3;
+  }
+
+  .fTnLhc{
+    background-color: #DE3163!important;
+  }
