@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './navbar.css'
 import logo from "../assets/logo.svg"
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
 
@@ -16,9 +16,11 @@ export default class Navbar extends Component {
         return (
             <div className={this.state.hamburger ? "wholenav overflow" : "wholenav"}>
                 <nav>
-                    <figure className="logo-fig">
-                        <img class="logo-img" src={logo} alt="logo" />
-                    </figure>
+                    <Link to="/">
+                        <figure className="logo-fig">
+                            <img class="logo-img" src={logo} alt="logo" />
+                        </figure>
+                    </Link>
                     <ul>
                         <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="/product">Products</NavLink></li>
