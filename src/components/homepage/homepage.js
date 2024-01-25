@@ -2,6 +2,7 @@ import React from "react";
 import productDetails from "../../data/productDetails.js";
 import Slider from "../Slider.js";
 import Searching from "../Searching.js";
+import Tranding from "../Trending.js";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <div>
       <div className="tc ma0 pa4 min-vh-100">
         <Slider/>
+        <Tranding product={productDetails}/>
         <Searching product={productDetails}/>
       </div>
     </div>

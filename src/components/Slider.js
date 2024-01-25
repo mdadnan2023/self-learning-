@@ -7,7 +7,7 @@ import fifth from "../components/assets/fifth.jpg"
 
 export default function slider() {
   return (
-    <div className="tc ma0 pa4">
+    <div>
       <div
         id="carouselExampleIndicators"
         className="carousel slide"
