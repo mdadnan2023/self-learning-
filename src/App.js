@@ -9,7 +9,6 @@ import Searching from "./components/Searching.js";
 import productDetails from "./data/productDetails.js";
 import Error from "./components/Error.js";
 
-
 function App() {
 
   return (

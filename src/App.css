@@ -173,3 +173,29 @@
   .fTnLhc{
     background-color: #DE3163!important;
   }
+
+  .slider-img{
+    width: 100%;
+    display: block;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .carousel-item{
+    border-radius: 25px;
+  }
+  .carousel-control-prev, .carousel-control-next{
+    width: 40px!important;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border: 2px solid black;
+    background-color: #DE3163;
+  }
+  .carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+  .carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
