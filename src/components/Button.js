@@ -1,17 +1,27 @@
-import React from 'react';
-import productDetails from '../data/productDetails';
+import React from "react";
+import productDetails from "../data/productDetails";
+
+
 
 function Button({ menuItems, filterItem, setItem }) {
+  const handleSelectChange = (event) => {
+    const selectedCategory = event.target.value;
+    if (selectedCategory === "All") {
+      setItem(productDetails);
+    } else {
+      filterItem(selectedCategory);
+    }
+  };
+
   return (
-    <div className='flex gap-8 mx-5'>
-      {menuItems.map((Val, id) => {
-        return (
-          <button className="btn-dark text-white p-1 px-2 mx-5 btn fw-bold" onClick={() => filterItem(Val)} key={id}>
-            {Val}
-          </button>
-        );
-      })}
-      <button className="btn-dark text-white p-1 px-3 mx-5 fw-bold btn" onClick={() => setItem(productDetails)}>All</button>
+    <div className="flex gap-8 mx-5">
+      <h2>Filter Yor Product : </h2>
+      <select class="form-group" onChange={handleSelectChange}>
+        <option value="All">All</option>
+        {menuItems.map((category, id) => (
+          <option key={id} value={category}>{category}</option>
+        ))}
+      </select>
     </div>
   );
 }
