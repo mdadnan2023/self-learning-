@@ -3,7 +3,7 @@ import React from 'react'
 export default function Trending() {
   return (
     <div className="trending section">
-      Trending
+      <h1 className=''>Our Trending Products</h1>
     </div>
   )
 }
