@@ -1,7 +1,7 @@
 // Contact.js
 
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
 
 const ContactContainer = styled.div`
   max-width: 600px;
@@ -47,7 +47,7 @@ const FormButton = styled.button`
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease-in-out;
-  
+
   &:hover {
     background-color: #0056b3;
   }
@@ -55,22 +55,19 @@ const FormButton = styled.button`
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({...formData,[e.target.name]: e.target.value,});
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add your logic to handle form submission (e.g., send an email, store in a database)
-    console.log('Form submitted:', formData);
+    alert("Form submitted:", formData);
   };
 
   return (

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 function Searching({ product }) {
   const [products, setProducts] = useState(product);
@@ -34,7 +33,7 @@ function Searching({ product }) {
       <div className="c-card-sec">
         {products.map((product) => {
           return (
-            <Link to="/product">
+
               <div className="card" style={{ width: "18rem" }} key={product.id}>
                 <img class="photo" src={product.img} alt={product.title} />
                 <div className="card-body">
@@ -53,7 +52,6 @@ function Searching({ product }) {
                   </div>
                 </div>
               </div>
-            </Link>
           );
         })}
       </div>
