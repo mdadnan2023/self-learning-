@@ -2,6 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.news{
-    @apply !text-red-600
-}

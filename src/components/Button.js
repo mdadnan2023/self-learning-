@@ -15,7 +15,7 @@ function Button({ menuItems, filterItem, setItem }) {
 
   return (
     <div className="flex gap-8 mx-5">
-      <h2>Filter Yor Product : </h2>
+      <h4>Filter Yor Product : </h4>
       <select class="custom-select" onChange={handleSelectChange}>
         <option value="All">All</option>
         {menuItems.map((category, id) => (
