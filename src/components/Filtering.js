@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Buttons from "./Button";
 import productDetails from "../data/productDetails";
+import { Link } from "react-router-dom";
+
 
 function Filtering() {
   const [items, setItems] = useState(productDetails);
-  
+
   const menuItems = [...new Set(productDetails.map((val) => val.category))];
 
   const filterItem = (curCat) => {
@@ -13,6 +15,8 @@ function Filtering() {
     });
     setItems(newItem);
   };
+
+
 
   return (
     <div className="tc ma0 pa4 min-vh-100">
@@ -33,11 +37,9 @@ function Filtering() {
               <p className="card-text">{product.description}</p>
               <div className="btn-sec">
                 <button type="button" className="btn btn-success">
-                  BUY NOW
+                  <Link to={`/product/${product.id}`}>BUY NOW</Link>
                 </button>
-                <button type="button" className="btn btn-success">
-                  ADD TO CART
-                </button>
+                <button type="button" className="btn btn-success">ADD TO CART</button>
               </div>
             </div>
           </div>
