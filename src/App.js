@@ -8,7 +8,7 @@ import Contact from "./components/Contact.js";
 import Filtering from "./components/Filtering.js";
 import productDetails from "./data/productDetails.js";
 import Error from "./components/Error.js";
-import ProductDetail from "./components/ProductDetail.js";
+import ProdoctDescription from "./components/ProductDescription.js";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
-          <Route path="/product/:productId" element={<ProductDetail />} />
+          <Route path="/product/:productId" element={<ProdoctDescription />} />
         </Routes>
       </div>
     </BrowserRouter>
