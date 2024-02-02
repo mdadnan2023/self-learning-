@@ -15,17 +15,31 @@ function Filtering() {
     setItems(newItem);
   };
 
+  const [searchItem, setsearchItem] = useState('');
+  const [filteredproduct, setfilteredproduct] = useState(productDetails);
+
+
+  const handleInputChange = (e) => {
+    const searchTerm = e.target.value;
+    setsearchItem(searchTerm);
+
+    const filteredItems = filteredproduct.filter((user) => user.name.toLowerCase().includes(searchTerm.toLowerCase()));
+
+    setfilteredproduct(filteredItems);
+  }
+
   return (
     <div className="tc ma0 pa4 min-vh-100">
       <div className="product-main-sec">
         <div className="left-sec">
+          <input value={searchItem} onChange={handleInputChange} type="text" />
           <Buttons
             menuItems={menuItems}
             filterItem={filterItem}
             setItem={setItems}
           />
         </div>
-        <div className="c-card-sec">
+        <div className="right-sec">
           {items.map((product) => (
             <div className="card" style={{ width: "18rem" }} key={product.id}>
               <Link to={`/product/${product.id}`}>
@@ -35,7 +49,8 @@ function Filtering() {
                     {product.category}
                   </h6>
                   <h5 className="card-title">{product.name}</h5>
-                  <p className="card-text">{product.description}</p>
+                  <p className="card-price">₹{product.price}</p>
+
                   <div className="btn-sec">
                     <button type="button" className="btn btn-success">
                       BUY NOW
