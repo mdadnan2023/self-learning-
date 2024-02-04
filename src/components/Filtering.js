@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 function Filtering() {
   const [items, setItems] = useState(productDetails);
+  const [searchItem, setSearchItem] = useState('');
 
   const menuItems = [...new Set(productDetails.map((val) => val.category))];
 
@@ -15,24 +16,22 @@ function Filtering() {
     setItems(newItem);
   };
 
-  const [searchItem, setsearchItem] = useState('');
-  const [filteredproduct, setfilteredproduct] = useState(productDetails);
-
-
   const handleInputChange = (e) => {
     const searchTerm = e.target.value;
-    setsearchItem(searchTerm);
+    setSearchItem(searchTerm);
 
-    const filteredItems = filteredproduct.filter((user) => user.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    const filteredItems = productDetails.filter((product) => 
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
-    setfilteredproduct(filteredItems);
+    setItems(filteredItems);
   }
 
   return (
     <div className="tc ma0 pa4 min-vh-100">
       <div className="product-main-sec">
         <div className="left-sec">
-          <input value={searchItem} onChange={handleInputChange} type="text" />
+          <input type="text" placeholder="Search..." value={searchItem} onChange={handleInputChange} />
           <Buttons
             menuItems={menuItems}
             filterItem={filterItem}
