@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Filtering() {
   const [items, setItems] = useState(productDetails);
-  const [searchItem, setSearchItem] = useState("");
+  const [searchItem, setSearchItem] = useState("");    //searchbar input variable
 
   const menuItems = [...new Set(productDetails.map((val) => val.category))];
   const menuBrand = [...new Set(productDetails.map((val) => val.brand))];
@@ -15,6 +15,13 @@ function Filtering() {
       return newVal.category === curCat;
     });
     setItems(newItem);
+  };
+
+  const filterBrand = (curBrand) => {
+    const newBrand = productDetails.filter((newVal) => {
+      return newVal.brand === curBrand;
+    });
+    setItems(newBrand);
   };
 
   const handleInputChange = (e) => {
@@ -44,6 +51,7 @@ function Filtering() {
             menuItems={menuItems}
             filterItem={filterItem}
             setItem={setItems}
+            filterBrand={filterBrand}
             menuBrand={menuBrand}
           />
         </div>
