@@ -3,26 +3,40 @@ import productDetails from "../data/productDetails";
 
 
 
-function Button({ menuItems, menuBrand, filterItem, setItem }) {
+function Button({ menuItems, menuBrand, filterBrand, filterItem, setItem }) {
+
+  // filter product by category
   const handleSelectChange = (event) => {
     const selectedCategory = event.target.value;
-    if (selectedCategory === "All") {
+    if (selectedCategory === "Select Category") {
       setItem(productDetails);
     } else {
       filterItem(selectedCategory);
     }
   };
 
+  // filter product by brand
+  const handleBrandChange = (event) => {
+    const selectedBrand = event.target.value;
+    if (selectedBrand === "Select Brand") {
+      setItem(productDetails);
+    } else {
+      filterBrand(selectedBrand);
+    }
+  };
+
+
   return (
     <div className="w-100">
       <select className="custom-select" onChange={handleSelectChange}>
-        <option value="All">Select Category</option>
+        <option value="Select Category">Select Category</option>
         {menuItems.map((category, id) => (
           <option key={id} value={category}>{category}</option>
         ))}
       </select>
-      <select className="custom-select" onChange={handleSelectChange}>
-        <option value="All">Select Brand</option>
+      
+      <select className="custom-select" onChange={handleBrandChange}>
+        <option value="Select Brand">Select Brand</option>
         {menuBrand.map((brand, id) => (
           <option key={id} value={brand}>{brand}</option>
         ))}
