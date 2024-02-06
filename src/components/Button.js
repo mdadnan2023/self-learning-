@@ -3,7 +3,7 @@ import productDetails from "../data/productDetails";
 
 
 
-function Button({ menuItems, filterItem, setItem }) {
+function Button({ menuItems, menuBrand, filterItem, setItem }) {
   const handleSelectChange = (event) => {
     const selectedCategory = event.target.value;
     if (selectedCategory === "All") {
@@ -14,12 +14,17 @@ function Button({ menuItems, filterItem, setItem }) {
   };
 
   return (
-    <div className="mx-5">
-      <h4>Filters:</h4>
-      <select class="custom-select" onChange={handleSelectChange}>
-        <option value="All">All</option>
+    <div className="w-100">
+      <select className="custom-select" onChange={handleSelectChange}>
+        <option value="All">Select Category</option>
         {menuItems.map((category, id) => (
           <option key={id} value={category}>{category}</option>
+        ))}
+      </select>
+      <select className="custom-select" onChange={handleSelectChange}>
+        <option value="All">Select Brand</option>
+        {menuBrand.map((brand, id) => (
+          <option key={id} value={brand}>{brand}</option>
         ))}
       </select>
     </div>
