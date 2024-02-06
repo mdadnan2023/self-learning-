@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 
 function Filtering() {
   const [items, setItems] = useState(productDetails);
-  const [searchItem, setSearchItem] = useState('');
+  const [searchItem, setSearchItem] = useState("");
 
   const menuItems = [...new Set(productDetails.map((val) => val.category))];
+  const menuBrand = [...new Set(productDetails.map((val) => val.brand))];
 
   const filterItem = (curCat) => {
     const newItem = productDetails.filter((newVal) => {
@@ -20,22 +21,30 @@ function Filtering() {
     const searchTerm = e.target.value;
     setSearchItem(searchTerm);
 
-    const filteredItems = productDetails.filter((product) => 
+    const filteredItems = productDetails.filter((product) =>
       product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
     setItems(filteredItems);
-  }
+  };
 
   return (
     <div className="tc ma0 pa4 min-vh-100">
       <div className="product-main-sec">
         <div className="left-sec">
-          <input type="text" placeholder="Search..." value={searchItem} onChange={handleInputChange} />
+          <h4>Filters:</h4>
+          <input
+            className="w-100 px-4 py-2"
+            type="text"
+            placeholder="Search..."
+            value={searchItem}
+            onChange={handleInputChange}
+          />
           <Buttons
             menuItems={menuItems}
             filterItem={filterItem}
             setItem={setItems}
+            menuBrand={menuBrand}
           />
         </div>
         <div className="right-sec">
