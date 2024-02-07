@@ -228,3 +228,12 @@
     display: flex;
     gap: 40px;
   }
+
+  .filter-input-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }

@@ -9,6 +9,7 @@ function Filtering() {
 
   const menuItems = [...new Set(productDetails.map((val) => val.category))];
   const menuBrand = [...new Set(productDetails.map((val) => val.brand))];
+  const menuColor = [...new Set(productDetails.map((val) => val.color))];
 
   const filterItem = (curCat) => {
     const newItem = productDetails.filter((newVal) => {
@@ -23,6 +24,13 @@ function Filtering() {
     });
     setItems(newBrand);
   };
+
+  const filterColor = (curColor) => {
+    const newColor = productDetails.filter((newVal) =>{
+      return newVal.color === curColor;
+    });
+    setItems(newColor);
+  }
 
   const handleInputChange = (e) => {
     const searchTerm = e.target.value;
@@ -53,6 +61,8 @@ function Filtering() {
             setItem={setItems}
             filterBrand={filterBrand}
             menuBrand={menuBrand}
+            menuColor={menuColor}
+            filterColor={filterColor}
           />
         </div>
         <div className="right-sec">
@@ -61,9 +71,12 @@ function Filtering() {
               <Link to={`/product/${product.id}`}>
                 <img className="photo" src={product.img} alt={product.title} />
                 <div className="card-body">
-                  <h6 className="card-subtitle mb-2 text-muted">
-                    {product.category}
-                  </h6>
+                    <h6 className="card-subtitle mb-2 text-muted">
+                      {product.category}
+                    </h6>
+                    <p className="card-price mb-2">
+                      Brand: {product.brand}
+                    </p>
                   <h5 className="card-title">{product.name}</h5>
                   <p className="card-price">₹{product.price}</p>
 
