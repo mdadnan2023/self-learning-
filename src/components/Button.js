@@ -33,12 +33,16 @@ function Button({
   // filter product by color
   const handleColorChange = (event) => {
     const selectedColor = event.target.value;
-    if (selectedColor === " ") {
-      setItem(productDetails);
-    } else {
-      // filterColor(selectedColor);
-      alert(this.value);
-    }
+    const isChecked = event.target.checked;
+
+    const filteredItems = productDetails.filter((product) => {
+      if (isChecked) {
+        return product.color === selectedColor;
+      } else {
+        return true;
+      }
+    });
+    setItem(filteredItems);
   };
 
   return (
@@ -62,17 +66,20 @@ function Button({
       </select>
 
       {menuColor.map((color, id) => (
-        <div className="form-check" key={id} onChange={handleColorChange}>
+        <div className="form-check" key={id}>
           <input
             type="checkbox"
-            class="form-check-input"
-            id="exampleCheck1"
+            className="form-check-input"
+            onChange={handleColorChange}
+            value={color}
           />
-          <label class="form-check-label" value={color}>
+          <label className="form-check-label">
             {color}
           </label>
         </div>
       ))}
+
+      
     </div>
   );
 }

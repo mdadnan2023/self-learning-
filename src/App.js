@@ -9,6 +9,7 @@ import Filtering from "./components/Filtering.js";
 import productDetails from "./data/productDetails.js";
 import Error from "./components/Error.js";
 import ProdoctDescription from "./components/ProductDescription.js";
+import Footer from "./components/footer/footer.jsx";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/product/:productId" element={<ProdoctDescription />} />
         </Routes>
       </div>
+      <Footer />
     </BrowserRouter>
   );
 }
