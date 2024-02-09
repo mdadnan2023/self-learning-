@@ -64,9 +64,9 @@ const productDetails = [
   },
   {
     id: 6,
-    name: "white pant",
+    name: "grey pant",
     quantity: 22, 
-    color:"white",
+    color:"grey",
     brand: "Under Armour", 
     price: 240,
     size : ["S", "M", "2XL", "3XL"],
@@ -76,9 +76,9 @@ const productDetails = [
   },
   {
     id: 7,
-    name: "white shoes",
+    name: "grey shoes",
     quantity: 8, 
-    color:"white",
+    color:"grey",
     brand: "New Balance",
     price: 420,
     size : ["S", "M", "L", "XL"],
