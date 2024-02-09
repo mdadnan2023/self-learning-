@@ -237,3 +237,17 @@
     align-items: flex-start;
     gap: 10px;
   }
+  .form-check{
+    display: flex;
+    cursor: pointer !important;
+  }
+  .label-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .color-circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }

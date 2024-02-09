@@ -69,16 +69,26 @@ function Button({
         <div className="form-check" key={id}>
           <input
             type="checkbox"
+            id={id}
             className="form-check-input"
-            onChange={handleColorChange}
             value={color}
+            onChange={handleColorChange}
           />
-          <label className="form-check-label">
-            {color}
-          </label>
+          <div className="label-wrapper">
+            <span className="color-circle" style={{backgroundColor: color}}></span>
+            <label for={id} className="form-check-label">
+              {color}
+            </label>
+          </div>
         </div>
       ))}
 
+      {/* <div className="price-sec">
+        <h6>Rs.100 to Rs.199</h6>
+        <h6>Rs.200 to Rs.299</h6>
+        <h6>Rs.300 to Rs.399</h6>
+        <h6>Rs.400 to Rs.500</h6>
+      </div> */}
       
     </div>
   );
