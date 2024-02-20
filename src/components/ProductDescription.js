@@ -1,4 +1,13 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 import { useParams } from "react-router-dom";
 import productDetails from "../data/productDetails";
 
@@ -10,35 +19,23 @@ export default function ProdoctDescription() {
     <div className="tc ma0 pa4 min-vh-100">
       <div class="product-description-main">
         <div className="product-image-slider w-50">
-          <ul class="nav nav-pills">
-            <li class="active-image">
-              <a data-toggle="pill" href="#menu1" className="active show">
-                Menu 1
-              </a>
-            </li>
-            <li>
-              <a data-toggle="pill" href="#menu2">
-                Menu 2
-              </a>
-            </li>
-            <li>
-              <a data-toggle="pill" href="#menu3">
-                Menu 3
-              </a>
-            </li>
-          </ul>
-
-          <div class="tab-content">
-            <div id="menu1" class="tab-pane fade in active-image show active">
-              <h3>Menu 1</h3>
-            </div>
-            <div id="menu2" class="tab-pane fade">
-              <h3>Menu 2</h3>
-            </div>
-            <div id="menu3" class="tab-pane fade">
-              <h3>Menu 3</h3>
-            </div>
-          </div>
+          <Swiper
+            // install Swiper modules
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={50}
+            slidesPerView={3}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            <SwiperSlide>Slide 1</SwiperSlide>
+            <SwiperSlide>Slide 2</SwiperSlide>
+            <SwiperSlide>Slide 3</SwiperSlide>
+            <SwiperSlide>Slide 4</SwiperSlide>
+            ...
+          </Swiper>
         </div>
         <div className="product-description w-50">
           <h1 className="product-desc-title">{clickProduct.name}</h1>
