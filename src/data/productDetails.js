@@ -11,8 +11,7 @@ const productDetails = [
     size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "pant",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: [img1,img2]
-    // img: "https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/y/4/a/34-hd-gaumukhi-creation-original-imagmyf5neh2fgbv.jpeg?q=70"
+    img: "https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/y/4/a/34-hd-gaumukhi-creation-original-imagmyf5neh2fgbv.jpeg?q=70"
   },
   {
     id: 2,
