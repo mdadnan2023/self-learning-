@@ -69,7 +69,7 @@ function Filtering() {
           {items.map((product) => (
             <div className="card" style={{ width: "18rem" }} key={product.id}>
               <Link to={`/product/${product.id}`}>
-                <img className="photo" src={product.img[0]} alt={product.title} />
+                <img className="photo" src={product.img} alt={product.title} />
                 <div className="card-body">
                     <h6 className="card-subtitle mb-2 text-muted">
                       {product.category}
