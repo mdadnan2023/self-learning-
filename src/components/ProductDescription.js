@@ -27,9 +27,10 @@ export default function ProdoctDescription() {
           >
             {productDetails.map((prod) => (
               <SwiperSlide className="swiper-card" key={prod.id}>
-                {prod.img.map((image, index) =>(
-                  <img className="photo" src={image} alt="new" key={index} />
-                ))}
+                {Array.isArray(prod.img) &&
+                  prod.img.map((image, index) => (
+                    <img className="photo" src={image} alt="new" key={index} />
+                  ))}
               </SwiperSlide>
             ))}
           </Swiper>
@@ -47,6 +48,7 @@ export default function ProdoctDescription() {
         </div>
         <div className="product-description w-50">
           <h1 className="product-desc-title">{clickProduct.name}</h1>
+          <h1 className="product-desc-title">{clickProduct.price}</h1>
         </div>
       </div>
     </div>
