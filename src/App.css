@@ -46,6 +46,9 @@
   gap: 10px;
   border-right: 1px solid gray;
   padding-right: 20px;
+  position: sticky;
+  height: 100%;
+  top: 20px;
 }
 .card-price{
   color: #101010;
