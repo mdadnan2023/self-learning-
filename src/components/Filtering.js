@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Filtering() {
   const [items, setItems] = useState(productDetails);
-  const [searchItem, setSearchItem] = useState("");    //searchbar input variable
+  const [searchItem, setSearchItem] = useState(""); //searchbar input variable
 
   const menuItems = [...new Set(productDetails.map((val) => val.category))];
   const menuBrand = [...new Set(productDetails.map((val) => val.brand))];
@@ -26,11 +26,11 @@ function Filtering() {
   };
 
   const filterColor = (curColor) => {
-    const newColor = productDetails.filter((newVal) =>{
+    const newColor = productDetails.filter((newVal) => {
       return newVal.color === curColor;
     });
     setItems(newColor);
-  }
+  };
 
   const handleInputChange = (e) => {
     const searchTerm = e.target.value;
@@ -69,14 +69,18 @@ function Filtering() {
           {items.map((product) => (
             <div className="card" style={{ width: "18rem" }} key={product.id}>
               <Link to={`/product/${product.id}`}>
-                <img className="photo" src={product.img[0]} alt={product.title} />
+                <figure className="filter-card-fig">
+                  <img
+                    className="filter-card-img"
+                    src={product.img[0]}
+                    alt={product.title}
+                  />
+                </figure>
                 <div className="card-body">
-                    <h6 className="card-subtitle mb-2 text-muted">
-                      {product.category}
-                    </h6>
-                    <p className="card-price mb-2">
-                      Brand: {product.brand}
-                    </p>
+                  <h6 className="card-subtitle mb-2 text-muted">
+                    {product.category}
+                  </h6>
+                  <p className="card-price mb-2">Brand: {product.brand}</p>
                   <h5 className="card-title">{product.name}</h5>
                   <p className="card-price">₹{product.price}</p>
 

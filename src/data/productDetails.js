@@ -25,7 +25,8 @@ const productDetails = [
     size: ["S", "M", "3XL"],
     category: "pant",
     description: "Some quick example text to build on the card title and make up the bulk of the card's conteqt.",
-    img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-trouser/t/o/h/34-dms001-formal-trouser-ks-brand-original-imag4dxfqjzhrwws.jpeg?q=70"
+    img:[img2, img3]
+    // img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-trouser/t/o/h/34-dms001-formal-trouser-ks-brand-original-imag4dxfqjzhrwws.jpeg?q=70"
 
   },
   {

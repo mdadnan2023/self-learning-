@@ -72,8 +72,8 @@
 
 .card img {
     width: 100%;
-    height: 200px;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     padding: 8px;
 }
 
@@ -106,7 +106,17 @@
 }
 .photo{
     border-bottom: 1px solid #101010;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+.filter-card-fig{
+  width: 100%;
+  height: 180px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #101010;
+}
+
 
 .card-title {
     text-transform: capitalize;
