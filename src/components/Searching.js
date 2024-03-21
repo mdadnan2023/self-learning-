@@ -34,7 +34,9 @@ function Searching({ product }) {
         {products.map((product) => {
           return (
             <div className="card" style={{ width: "18rem" }} key={product.id}>
-              <img class="photo" src={product.img} alt={product.title} />
+              <figure className="filter-card-fig">
+                <img class="photo" src={product.img} alt={product.title} />
+              </figure>
               <div className="card-body">
                 <h6 className="card-subtitle mb-2 text-muted">
                   {product.category}
@@ -54,7 +56,6 @@ function Searching({ product }) {
           );
         })}
       </div>
-
     </div>
   );
 }
