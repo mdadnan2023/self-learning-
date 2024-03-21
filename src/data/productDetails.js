@@ -1,4 +1,4 @@
-import img1 from "../components/assets/kurta.jpg";
+import img1 from "../components/assets/blue-jeans.webp";
 import img2 from "../components/assets/jeans.jpg";
 import img3 from "../components/assets/shirt.jpg";
 const productDetails = [
