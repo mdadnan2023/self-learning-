@@ -1,6 +1,25 @@
-import img1 from "../components/assets/blue-jeans.webp";
-import img2 from "../components/assets/jeans.jpg";
-import img3 from "../components/assets/shirt.jpg";
+import bp1 from "../components/assets/blue-jeans.webp";
+import bp2 from "../components/assets/bp2.webp";
+import bp3 from "../components/assets/bp3.webp";
+import bp4 from "../components/assets/bp4.webp";
+import blp1 from "../components/assets/blp1.webp";
+import blp2 from "../components/assets/blp2.webp";
+import blp3 from "../components/assets/blp3.webp";
+import blp4 from "../components/assets/blp4.webp";
+import bs1 from "../components/assets/bs1.webp";
+import bs2 from "../components/assets/bs2.webp";
+import bs3 from "../components/assets/bs3.webp";
+import bs4 from "../components/assets/bs4.webp";
+import bso1 from "../components/assets/bso1.webp";
+import bso2 from "../components/assets/bso2.webp";
+import bso3 from "../components/assets/bso3.webp";
+import bso4 from "../components/assets/bso4.webp";
+
+
+
+
+// import img2 from "../components/assets/jeans.jpg";
+
 const productDetails = [
   {
     id: 1,
@@ -12,8 +31,7 @@ const productDetails = [
     size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "pant",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img:[img1, img2, img3]
-    // img: "https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/y/4/a/34-hd-gaumukhi-creation-original-imagmyf5neh2fgbv.jpeg?q=70"
+    img:[bp1, bp2, bp3, bp4]
   },
   {
     id: 2,
@@ -25,9 +43,7 @@ const productDetails = [
     size: ["S", "M", "3XL"],
     category: "pant",
     description: "Some quick example text to build on the card title and make up the bulk of the card's conteqt.",
-    img:[img2, img3]
-    // img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-trouser/t/o/h/34-dms001-formal-trouser-ks-brand-original-imag4dxfqjzhrwws.jpeg?q=70"
-
+    img:[blp1, blp2, blp3, blp4]
   },
   {
     id: 3,
@@ -39,7 +55,7 @@ const productDetails = [
     size : ["S", "M", "L", "XL", "2XL"],
     category: "shirt",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://rukminim2.flixcart.com/image/612/612/l4rd0280/shirt/g/q/b/l-men-regular-slim-fit-solid-button-down-collar-formal-shirt-original-imagfh9bffv4bxjq.jpeg?q=70"
+    img:[bs1, bs2, bs3, bs4]
   },
   {
     id: 4,
@@ -51,8 +67,7 @@ const productDetails = [
     size : ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "shoes",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/z/i/5/6-442-blk-gld-40-bruton-black-original-imag4q6ntfwkfzna-bb.jpeg?q=70"
-
+    img:[bso1, bso2, bso3, bso4]
   },
   {
     id: 5,
