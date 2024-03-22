@@ -14,9 +14,46 @@ import bso1 from "../components/assets/bso1.webp";
 import bso2 from "../components/assets/bso2.webp";
 import bso3 from "../components/assets/bso3.webp";
 import bso4 from "../components/assets/bso4.webp";
-
-
-
+import blso1 from "../components/assets/blso1.webp";
+import blso2 from "../components/assets/blso2.webp";
+import blso3 from "../components/assets/blso3.webp";
+import blso4 from "../components/assets/blso4.webp";
+import gp1 from "../components/assets/gp1.webp";
+import gp2 from "../components/assets/gp2.webp";
+import gp3 from "../components/assets/gp3.webp";
+import gp4 from "../components/assets/gp4.webp";
+import gs1 from "../components/assets/gs1.webp";
+import gs2 from "../components/assets/gs2.webp";
+import gs3 from "../components/assets/gs3.webp";
+import gs4 from "../components/assets/gs4.webp";
+import rs1 from "../components/assets/rs1.webp";
+import rs2 from "../components/assets/rs2.webp";
+import rs3 from "../components/assets/rs3.webp";
+import rs4 from "../components/assets/rs4.webp";
+import grp1 from "../components/assets/grp1.webp";
+import grp2 from "../components/assets/grp2.webp";
+import grp3 from "../components/assets/grp3.webp";
+import grp4 from "../components/assets/grp4.webp";
+import ps1 from "../components/assets/ps1.webp";
+import ps2 from "../components/assets/ps2.webp";
+import ps3 from "../components/assets/ps3.webp";
+import ps4 from "../components/assets/ps4.webp";
+import rso1 from "../components/assets/rso1.webp";
+import rso2 from "../components/assets/rso2.webp";
+import rso3 from "../components/assets/rso3.webp";
+import rso4 from "../components/assets/bso4.webp";
+import bsho1 from "../components/assets/bsho1.webp";
+import bsho2 from "../components/assets/bsho2.webp";
+import bsho3 from "../components/assets/bsho3.webp";
+import bsho4 from "../components/assets/bsho4.webp";
+import pst1 from "../components/assets/pst1.webp";
+import pst2 from "../components/assets/pst2.webp";
+import pst3 from "../components/assets/pst3.webp";
+import pst4 from "../components/assets/pst4.webp";
+import yp1 from "../components/assets/yp1.webp";
+import yp2 from "../components/assets/yp2.webp";
+import yp3 from "../components/assets/yp3.webp";
+import yp4 from "../components/assets/yp4.webp";
 
 // import img2 from "../components/assets/jeans.jpg";
 
@@ -30,8 +67,9 @@ const productDetails = [
     price: 240,
     size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "pant",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img:[bp1, bp2, bp3, bp4]
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    img: [bp1, bp2, bp3, bp4],
   },
   {
     id: 2,
@@ -42,32 +80,35 @@ const productDetails = [
     price: 410,
     size: ["S", "M", "3XL"],
     category: "pant",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's conteqt.",
-    img:[blp1, blp2, blp3, blp4]
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's conteqt.",
+    img: [blp1, blp2, blp3, blp4]
   },
   {
     id: 3,
     name: "blue shirt",
     quantity: 18,
     color: "blue",
-    brand: "Adidas", 
+    brand: "Adidas",
     price: 350,
-    size : ["S", "M", "L", "XL", "2XL"],
+    size: ["S", "M", "L", "XL", "2XL"],
     category: "shirt",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img:[bs1, bs2, bs3, bs4]
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    img: [bs1, bs2, bs3, bs4]
   },
   {
     id: 4,
     name: "black shoes",
-    quantity: 9, 
+    quantity: 9,
     brand: "Puma",
     color: "black",
-    price: 290, 
-    size : ["S", "M", "L", "XL", "2XL", "3XL"],
+    price: 290,
+    size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "shoes",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img:[bso1, bso2, bso3, bso4]
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    img: [bso1, bso2, bso3, bso4]
   },
   {
     id: 5,
@@ -76,120 +117,129 @@ const productDetails = [
     color: "blue",
     brand: "Reebok",
     price: 480,
-    size : ["XL", "2XL", "3XL"], 
+    size: ["XL", "2XL", "3XL"],
     category: "shoes",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg"
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    img: [blso1, blso2, blso3, blso4]
   },
   {
     id: 6,
     name: "grey pant",
-    quantity: 22, 
-    color:"grey",
-    brand: "Under Armour", 
+    quantity: 22,
+    color: "grey",
+    brand: "Under Armour",
     price: 240,
-    size : ["S", "M", "2XL", "3XL"],
+    size: ["S", "M", "2XL", "3XL"],
     category: "pant",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/e/m/v/32-non-den-trouser-35-32-kundan-original-imafw2jxgap25gnr-bb.jpeg?q=70"
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    img: [gp1, gp2, gp3, gp4]
   },
   {
     id: 7,
     name: "grey shoes",
-    quantity: 8, 
-    color:"grey",
+    quantity: 8,
+    color: "grey",
     brand: "New Balance",
     price: 420,
-    size : ["S", "M", "L", "XL"],
+    size: ["S", "M", "L", "XL"],
     category: "shoes",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg"
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      img: [gs1, gs2, gs3, gs4]
   },
   {
     id: 8,
     name: "red shirt",
-    quantity: 4, 
-    color:"red",
-    brand: "Asics", 
+    quantity: 4,
+    color: "red",
+    brand: "Asics",
     price: 310,
-    size : ["S", "M", "L", "XL", "2XL", "3XL"],
+    size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "shirt",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/z/t/y/44-assfwspfr17252-allen-solly-original-imafgnsrg8xmkyk4-bb.jpeg?q=70"
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      img: [rs1, rs2, rs3, rs4]
   },
   {
     id: 9,
     name: "gray pant",
-    quantity: 27, 
-    color:"gray",
-    brand: "Fila", 
+    quantity: 27,
+    color: "gray",
+    brand: "Fila",
     price: 230,
-    size : ["S", "M", "L", "3XL"],
+    size: ["S", "M", "L", "3XL"],
     category: "pant",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/z/g/d/30-fkvt-11-og-vurso-original-imafxufhhqzbjdfr.jpeg?q=70"
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      img: [grp1, grp2, grp3, grp4]
   },
   {
     id: 10,
     name: "purple shirt",
-    quantity: 15, 
+    quantity: 15,
     color: "purple",
-    brand: "Converse", 
+    brand: "Converse",
     price: 390,
-    size : ["S", "M", "L", "XL", "2XL", "3XL"],
+    size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "shirt",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/i/5/x/l-dgflortewz11-dimmy-original-imagrnr8gqy92394.jpeg?q=70"
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      img: [ps1, ps2, ps3, ps4]
   },
   {
     id: 11,
     name: "red shoes",
-    quantity: 12, 
+    quantity: 12,
     color: "red",
-    brand: "Brooks", 
-    price: 270, 
-    size : ["S", "M", "L", "XL"],
+    brand: "Brooks",
+    price: 270,
+    size: ["S", "M", "L", "XL"],
     category: "shoes",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg"
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      img: [rso1, rso2, rso3, rso4]
   },
   {
     id: 12,
     name: "brown shoes",
-    quantity: 10, 
-    color:"red",
-    brand: "Saucony", 
+    quantity: 10,
+    color: "red",
+    brand: "Saucony",
     price: 500,
-    size : ["2XL", "3XL"],
+    size: ["2XL", "3XL"],
     category: "shoes",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://rukminim2.flixcart.com/image/612/612/jyvvgcw0/shoe/j/y/a/cscocmouse-6-asian-brown-original-imaf78gxmkzgxg7p.jpeg?q=70"
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      img: [bsho1, bsho2, bsho3, bsho4]
   },
   {
     id: 13,
     name: "pink shirt",
     category: "shirt",
-    quantity: 6, 
-    color:"pink",
-    brand: "Merrell", 
+    quantity: 6,
+    color: "pink",
+    brand: "Merrell",
     price: 320,
-    size : ["S", "M", "L", "XL"],
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/g/x/v/s-tbh-turkiy-pk-the-bear-house-original-imagscbsy9rdmh9d.jpeg?q=70"
+    size: ["S", "M", "L", "XL"],
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      img: [pst1, pst2, pst3, pst4]
   },
   {
     id: 14,
     name: "yellow pant",
-    quantity: 25, 
+    quantity: 25,
     color: "yellow",
-    brand: "Timberland", 
+    brand: "Timberland",
     price: 210,
-    size : ["S", "M", "L", "XL", "2XL", "3XL"], 
+    size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "pant",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://rukminim2.flixcart.com/image/612/612/k73nlow0/trouser/c/j/g/36-t330-tr-cotton-orange-aa-ad-av-original-imafpf9txgkptzfa.jpeg?q=70"
-  }
-
+    description:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      img: [yp1, yp2, yp3, yp4]
+  },
 ];
 
 export default productDetails;
