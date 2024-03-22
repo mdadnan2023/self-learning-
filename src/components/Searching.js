@@ -35,7 +35,7 @@ function Searching({ product }) {
           return (
             <div className="card" style={{ width: "18rem" }} key={product.id}>
               <figure className="filter-card-fig">
-                <img class="photo" src={product.img} alt={product.title} />
+                <img class="photo" src={product.img[0]} alt={product.title} />
               </figure>
               <div className="card-body">
                 <h6 className="card-subtitle mb-2 text-muted">
