@@ -19,7 +19,12 @@ export default function ProductDescription() {
     <div className="tc ma0 pa4 min-vh-100">
       <div class="product-description-main">
         <div className="product-image-slider w-50">
-          <Swiper spaceBetween={30} pagination={{ clickable: true }} modules={[Pagination]} className="mySwiper swiper-card-wrapper">
+          <Swiper
+            spaceBetween={30}
+            pagination={{ clickable: true }}
+            modules={[Pagination]}
+            className="mySwiper swiper-card-wrapper"
+          >
             {clickProduct.img.map((image, index) => (
               <SwiperSlide className="swiper-card" key={index}>
                 <img className="photo" src={image} alt="new" />

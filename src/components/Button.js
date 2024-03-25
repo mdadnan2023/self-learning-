@@ -48,7 +48,7 @@ function Button({
   return (
     <div className="filter-input-sec">
       <select className="custom-select" onChange={handleSelectChange}>
-        <option value="Select Category">Select Category</option>
+        <option value="Select Category">All Category</option>
         {menuItems.map((category, id) => (
           <option key={id} value={category}>
             {category}
