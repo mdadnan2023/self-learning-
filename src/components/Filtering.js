@@ -39,12 +39,11 @@ function Filtering() {
     const filteredItems = productDetails.filter((product) =>
       product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
-
     setItems(filteredItems);
   };
 
   return (
-    <div className="tc ma0 pa4 min-vh-100">
+    <div className="tc ma0 pa4 min-vh-100 pt-0">
       <div className="product-main-sec">
         <div className="left-sec">
           <h4>Filters:</h4>
