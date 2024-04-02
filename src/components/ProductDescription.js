@@ -50,11 +50,11 @@ export default function ProductDescription() {
               <p>M.R.P</p>
             </div>
             <div className="price-box">
-              <span style={{ color: "#008000" }}>₹{clickProduct.price}</span>
+              <span style={{ color: "#008000" }}>₹{clickProduct.price * (40/100)}</span>
               <p>Selling Price</p>
             </div>
             <div className="price-box">
-              <span style={{ color: "red" }}>{clickProduct.price}%off</span>
+              <span style={{ color: "red" }}>40%off</span>
               <p>Discount</p>
             </div>
           </div>
@@ -66,6 +66,12 @@ export default function ProductDescription() {
                   {size}
                 </button>
               ))}
+            </div>
+          </div>
+          <div className="quantity-sec-wrapper">
+            <p className="product-desc-price">Quantity : </p>
+            <div className="quantity-box">
+              
             </div>
           </div>
         </div>
