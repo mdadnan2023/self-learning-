@@ -68,7 +68,7 @@ const productDetails = [
     size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "pant",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
     img: [bp1, bp2, bp3, bp4],
   },
   {
@@ -81,7 +81,7 @@ const productDetails = [
     size: ["S", "M", "3XL"],
     category: "pant",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's conteqt.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
     img: [blp1, blp2, blp3, blp4]
   },
   {
@@ -94,7 +94,7 @@ const productDetails = [
     size: ["S", "M", "L", "XL", "2XL"],
     category: "shirt",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
     img: [bs1, bs2, bs3, bs4]
   },
   {
@@ -107,7 +107,7 @@ const productDetails = [
     size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "shoes",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
     img: [bso1, bso2, bso3, bso4]
   },
   {
@@ -120,7 +120,7 @@ const productDetails = [
     size: ["XL", "2XL", "3XL"],
     category: "shoes",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
     img: [blso1, blso2, blso3, blso4]
   },
   {
@@ -133,7 +133,7 @@ const productDetails = [
     size: ["S", "M", "2XL", "3XL"],
     category: "pant",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
     img: [gp1, gp2, gp3, gp4]
   },
   {
@@ -146,7 +146,7 @@ const productDetails = [
     size: ["S", "M", "L", "XL"],
     category: "shoes",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
       img: [gs1, gs2, gs3, gs4]
   },
   {
@@ -159,7 +159,7 @@ const productDetails = [
     size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "shirt",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
       img: [rs1, rs2, rs3, rs4]
   },
   {
@@ -172,7 +172,7 @@ const productDetails = [
     size: ["S", "M", "L", "3XL"],
     category: "pant",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
       img: [grp1, grp2, grp3, grp4]
   },
   {
@@ -185,7 +185,7 @@ const productDetails = [
     size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "shirt",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
       img: [ps1, ps2, ps3, ps4]
   },
   {
@@ -198,7 +198,7 @@ const productDetails = [
     size: ["S", "M", "L", "XL"],
     category: "shoes",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
       img: [rso1, rso2, rso3, rso4]
   },
   {
@@ -211,7 +211,7 @@ const productDetails = [
     size: ["2XL", "3XL"],
     category: "shoes",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
       img: [bsho1, bsho2, bsho3, bsho4]
   },
   {
@@ -224,7 +224,7 @@ const productDetails = [
     price: 320,
     size: ["S", "M", "L", "XL"],
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
       img: [pst1, pst2, pst3, pst4]
   },
   {
@@ -237,7 +237,7 @@ const productDetails = [
     size: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "pant",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you’ve got a bullpen of natural ingredients that will strike out any stink.",
       img: [yp1, yp2, yp3, yp4]
   },
 ];

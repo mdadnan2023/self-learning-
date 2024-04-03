@@ -41,7 +41,7 @@ export default function ProductDescription() {
           <h1 className="product-desc-title">
             {clickProduct.brand} {clickProduct.name}
           </h1>
-          <p className="product-desc-price">Price : </p>
+          <h3 className="product-desc-price">Price : </h3>
           <div className="price-sec">
             <div className="price-box">
               <span style={{ textDecoration: "line-through" }}>
@@ -50,7 +50,9 @@ export default function ProductDescription() {
               <p>M.R.P</p>
             </div>
             <div className="price-box">
-              <span style={{ color: "#008000" }}>₹{clickProduct.price * (40/100)}</span>
+              <span style={{ color: "#008000" }}>
+                ₹{clickProduct.price * (40 / 100)}
+              </span>
               <p>Selling Price</p>
             </div>
             <div className="price-box">
@@ -59,7 +61,7 @@ export default function ProductDescription() {
             </div>
           </div>
           <div className="size-sec-wrapper">
-            <p className="product-desc-price">Size : </p>
+            <h3 className="product-desc-price">Size : </h3>
             <div className="size-sec">
               {clickProduct.size.map((size, index) => (
                 <button className="size-box" key={index}>
@@ -68,11 +70,22 @@ export default function ProductDescription() {
               ))}
             </div>
           </div>
-          <div className="quantity-sec-wrapper">
-            <p className="product-desc-price">Quantity : </p>
-            <div className="quantity-box">
-              
-            </div>
+          {/* <div className="quantity-sec-wrapper mt-5">
+            <h3 className="product-desc-price">Available Quantity : <span className="avail-num">{clickProduct.quantity}</span></h3>
+          </div> */}
+          <div className="quantity-sec-wrapper mt-5">
+            <h3 className="product-desc-price">
+              Product Details :{" "}
+              <p className="product-desc-detail">{clickProduct.description}</p>
+            </h3>
+          </div>
+          <div className="btn-sec">
+            <button type="button" className="cart-btn">
+              BUY NOW
+            </button>
+            <button type="button" className="cart-btn">
+              ADD TO CART
+            </button>
           </div>
         </div>
       </div>
