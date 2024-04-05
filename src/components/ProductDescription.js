@@ -1,12 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 import { useParams } from "react-router-dom";
 import productDetails from "../data/productDetails";
