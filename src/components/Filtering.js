@@ -35,7 +35,6 @@ function Filtering() {
   const handleInputChange = (e) => {
     const searchTerm = e.target.value;
     setSearchItem(searchTerm);
-
     const filteredItems = productDetails.filter((product) =>
       product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );

@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css";
@@ -17,25 +18,30 @@ export default function ProductDescription() {
   return (
     <div className="tc ma0 pa4 min-vh-100">
       <div class="product-description-main">
-        <div className="product-image-slider w-50">
-          <div className="sidebar-img-sec">
-            {clickProduct.img.map((image, index) => (
-              <figure class="sidebar-img-wrapper" key={index}>
-                <img src={image} alt="new" />
-              </figure>
-            ))}
+        <div className="product-image-slider w-50 p-4">
+          <div className="product-image-wrapper">
+            <div className="sidebar-img-sec">
+              {clickProduct.img.map((image, index) => (
+                <figure class="sidebar-img-wrapper" key={index}>
+                  <img src={image} alt="new" />
+                </figure>
+              ))}
+            </div>
+            <Swiper
+              spaceBetween={30}
+              pagination={{ clickable: true }}
+              className="mySwiper swiper-card-wrapper"
+            >
+              {clickProduct.img.map((image, index) => (
+                <SwiperSlide className="swiper-card" key={index}>
+                  <img src={image} alt="new" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
-          <Swiper
-            spaceBetween={30}
-            pagination={{ clickable: true }}
-            className="mySwiper swiper-card-wrapper"
-          >
-            {clickProduct.img.map((image, index) => (
-              <SwiperSlide className="swiper-card" key={index}>
-                <img src={image} alt="new" />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <button style={{width: "100%", marginTop : "16px", border: "1px solid #DE3163"}} type="button" className="cart-btn">
+            ADD TO WISHLIST 🤍
+          </button>
         </div>
         <div className="product-description w-50">
           <h1 className="product-desc-title">
@@ -75,20 +81,45 @@ export default function ProductDescription() {
           </div> */}
           <div className="quantity-sec-wrapper mt-5">
             <h3 className="product-desc-price">
-              Product Details :{" "}
+              Product Details :
               <p className="product-desc-detail">{clickProduct.description}</p>
             </h3>
           </div>
           <div className="btn-sec">
-            <button type="button" className="cart-btn">
+            <button  type="button" className="cart-btn">
               BUY NOW
             </button>
             <button type="button" className="cart-btn">
               ADD TO CART
             </button>
           </div>
+          <div className="quantity-sec-wrapper mt-5">
+            <h3 className="product-desc-price">
+              Offers :
+              <ul className="offer-list">
+                <li>
+                  Bank Offer5% Cashback on Flipkart Axis Bank Card{" "}
+                  <span>T&C</span>
+                </li>
+                <li>
+                  Bank OfferGet ₹25* instant discount for the 1st Flipkart Order
+                  using Flipkart UPI <span>T&C</span>
+                </li>
+                <li>
+                  Bank Offer₹2000 Off On SBI Credit Card Transactions{" "}
+                  <span>T&C</span>
+                </li>
+                <li>
+                  Special PriceGet extra ₹4901 off (price inclusive of
+                  cashback/coupon) <span>T&C</span>
+                </li>
+              </ul>
+            </h3>
+          </div>
+          
         </div>
       </div>
+      
     </div>
   );
 }

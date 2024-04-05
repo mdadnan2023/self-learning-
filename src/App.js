@@ -8,7 +8,7 @@ import Contact from "./components/Contact.js";
 import Filtering from "./components/Filtering.js";
 import productDetails from "./data/productDetails.js";
 import Error from "./components/Error.js";
-import ProdoctDescription from "./components/ProductDescription.js";
+import ProductDescription from "./components/ProductDescription.js";
 import Footer from "./components/footer/footer.jsx";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
-          <Route path="/product/:productId" element={<ProdoctDescription />} />
+          <Route path="/product/:productId" element={<ProductDescription />} />
         </Routes>
       </div>
       <Footer />
