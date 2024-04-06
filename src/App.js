@@ -10,6 +10,9 @@ import productDetails from "./data/productDetails.js";
 import Error from "./components/Error.js";
 import ProductDescription from "./components/ProductDescription.js";
 import Footer from "./components/footer/footer.jsx";
+import Checkout from "../src/components/Checkout.js";
+
+
 
 function App() {
   return (
@@ -26,6 +29,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
           <Route path="/product/:productId" element={<ProductDescription />} />
+          <Route path="/checkout/:productId" element={<Checkout />} />
         </Routes>
       </div>
       <Footer />

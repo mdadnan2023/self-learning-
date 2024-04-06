@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css";
@@ -35,7 +36,15 @@ export default function ProductDescription() {
               ))}
             </Swiper>
           </div>
-          <button style={{width: "100%", marginTop : "16px", border: "1px solid #DE3163"}} type="button" className="cart-btn">
+          <button
+            style={{
+              width: "100%",
+              marginTop: "16px",
+              border: "1px solid #DE3163",
+            }}
+            type="button"
+            className="cart-btn"
+          >
             ADD TO WISHLIST 🤍
           </button>
         </div>
@@ -82,8 +91,8 @@ export default function ProductDescription() {
             </h3>
           </div>
           <div className="btn-sec">
-            <button  type="button" className="cart-btn">
-              BUY NOW
+            <button type="button" className="cart-btn">
+              <Link to={`/checkout/${clickProduct.id}`}>BUY NOW</Link>
             </button>
             <button type="button" className="cart-btn">
               ADD TO CART
@@ -112,10 +121,8 @@ export default function ProductDescription() {
               </ul>
             </h3>
           </div>
-          
         </div>
       </div>
-      
     </div>
   );
 }
