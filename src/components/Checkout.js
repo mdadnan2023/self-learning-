@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import productDetails from "../data/productDetails";
 
 export default function Checkout() {
-  const { productDescId } = useParams();
+  const { productId } = useParams();
   const clickDescProduct = productDetails.find(
-    (prod) => prod.id == productDescId
+    (prod) => prod.id == productId
   );
-  console.log("productDescId:", productDescId);
+  console.log("productId:", productId);
   console.log("productDetails:", productDetails);
   console.log("clickDescProduct:", clickDescProduct);
   return (
     <div>
-      <h1>{clickDescProduct.price}</h1>
+      <h1>{clickDescProduct.id}</h1>
+      <h2>checkout</h2>
     </div>
   );
 }
