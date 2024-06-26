@@ -12,8 +12,8 @@ export default function Checkout() {
   console.log("clickDescProduct:", clickDescProduct);
   return (
     <div>
-      <h1>{clickDescProduct.id}</h1>
-      <h2>checkout</h2>
+      <h1>{clickDescProduct.price}</h1>
+      <h2>{clickDescProduct.name}</h2>
     </div>
   );
 }
