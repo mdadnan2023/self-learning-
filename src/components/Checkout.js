@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import productDetails from "../data/productDetails";
+import Swal from "sweetalert2";
 
 export default function Checkout() {
   const { productId } = useParams();
@@ -31,6 +32,27 @@ export default function Checkout() {
       </>
     );
   }
+
+  const fireAlert = () => {
+    Swal.fire({
+        title: 'Press OK to proceed and CANCEL for decline',
+        showConfirmButton: true,
+        showCancelButton: true,
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
+        icon: 'warning'
+    }
+    ).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+
+            Swal.fire('Your order is confirm', '', 'success');
+
+        } else
+            Swal.fire(' Cancelled', '', 'error')
+
+    })
+}
 
   return (
     <>
@@ -100,7 +122,7 @@ export default function Checkout() {
           <p>Total Products: ₹ {clickDescProduct.price * quantity}</p>
           <p>Delivery charges: ₹ 100</p>
           <h3>Grand Total: ₹ {clickDescProduct.price * quantity + 100}</h3>
-          <button className="checkout-button">Place Order</button>
+          <button onClick={fireAlert} className="checkout-button">Place Order</button>
         </div>
       </div>
     </>
