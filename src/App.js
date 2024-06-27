@@ -11,6 +11,7 @@ import Error from "./components/Error.js";
 import ProductDescription from "./components/ProductDescription.js";
 import Footer from "./components/footer/footer.jsx";
 import Checkout from "../src/components/Checkout.js";
+import Soon from "../src/components/soon.js";
 
 
 
@@ -27,6 +28,7 @@ function App() {
           />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/Soon" element={<Soon />} />
           <Route path="*" element={<Error />} />
           <Route path="/product/:productId" element={<ProductDescription />} />
           <Route path="/checkout/:productId" element={<Checkout />} />
