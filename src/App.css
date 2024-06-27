@@ -583,3 +583,27 @@ th {
 .checkout-button:hover {
   background-color: #a03553;
 }
+.c-soon-text {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: black;
+  font-family: Times New Roman, serif;
+  font-size: 6.5vw;
+}
+.c-soon-text:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom;
+  transform: rotateX(180deg);
+  line-height: 1.14em;
+ background: linear-gradient(0deg, #000000 0, transparent 70%);
+    -webkit-background-clip: text;
+  -webkit-text-color: transparent;
+  opacity: 0.3;
+}

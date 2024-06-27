@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import productDetails from "../data/productDetails";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 export default function Checkout() {
+    const navigate = useNavigate();
   const { productId } = useParams();
   const clickDescProduct = productDetails.find((prod) => prod.id == productId);
 
@@ -34,6 +36,7 @@ export default function Checkout() {
   }
 
   const fireAlert = () => {
+    
     Swal.fire({
         title: 'Press OK to proceed and CANCEL for decline',
         showConfirmButton: true,
@@ -47,11 +50,14 @@ export default function Checkout() {
         if (result.isConfirmed) {
 
             Swal.fire('Your order is confirm', '', 'success');
+            navigate("/");
 
         } else
             Swal.fire(' Cancelled', '', 'error')
 
     })
+    
+
 }
 
   return (
