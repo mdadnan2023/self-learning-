@@ -583,6 +583,11 @@ th {
 .checkout-button:hover {
   background-color: #a03553;
 }
+.coming-soon-wrapper{
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(dimgray, black);
+}
 .c-soon-text {
   margin: 0;
   padding: 0;
@@ -602,8 +607,8 @@ th {
   transform-origin: bottom;
   transform: rotateX(180deg);
   line-height: 1.14em;
- background: linear-gradient(0deg, #000000 0, transparent 70%);
-    -webkit-background-clip: text;
+  background: linear-gradient(0deg, #000000 0, transparent 70%);
+  -webkit-background-clip: text;
   -webkit-text-color: transparent;
   opacity: 0.3;
 }
