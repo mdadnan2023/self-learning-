@@ -26,7 +26,7 @@ export default class Navbar extends Component {
                         <li><NavLink to="/product">Products</NavLink></li>
                         <li><NavLink to="/about">About Us</NavLink></li>
                         <li><NavLink to="/contact">Contact Us</NavLink></li>
-                        <li><a className='icon-btn' href="/soon"><i class="fa-regular fa-user"></i>Login/Signup</a></li>
+                        <li><a className='icon-btn' href="/Login"><i class="fa-regular fa-user"></i>Login</a></li>
                     </ul>
 
                     <i className={this.state.hamburger ? "fas fa-times" : "fas fa-bars"} id="hamburger"

@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
 export default function Checkout() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const { productId } = useParams();
   const clickDescProduct = productDetails.find((prod) => prod.id == productId);
 

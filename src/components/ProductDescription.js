@@ -95,7 +95,7 @@ export default function ProductDescription() {
               <Link style={{color: "#FFFFFF"}} to={`/checkout/${clickProduct.id}`}>BUY NOW</Link>
             </button>
             <button type="button" className="cart-btn">
-              ADD TO CART
+              <Link style={{color: "#FFFFFF"}} to={`/checkout/${clickProduct.id}`}>ADD TO CART</Link>
             </button>
           </div>
           <div className="quantity-sec-wrapper mt-5">
