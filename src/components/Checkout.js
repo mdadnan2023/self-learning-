@@ -46,7 +46,6 @@ export default function Checkout() {
         icon: 'warning'
     }
     ).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
 
             Swal.fire('Your order is confirm', '', 'success');

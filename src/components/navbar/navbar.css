@@ -59,6 +59,10 @@
     border-radius: 25px;
     color: white;
 }
+.icon-btn:hover{
+    background-color: transparent !important;
+    border-color: #000000 !important;
+}
 
 .wholenav nav ul li a{
     text-decoration: none;
