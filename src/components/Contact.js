@@ -68,7 +68,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your logic to handle form submission (e.g., send an email, store in a database)
     alert("Form submitted:", formData);
   };
 

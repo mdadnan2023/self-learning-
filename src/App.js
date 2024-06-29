@@ -13,6 +13,7 @@ import Footer from "./components/footer/footer.jsx";
 import Checkout from "../src/components/Checkout.js";
 import { Soon } from "./components/soon.js";
 import Login from "./components/Login.js";
+import Signup from "./components/Signup.js";
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/Soon" element={<Soon />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<Signup />} />
           <Route path="*" element={<Error />} />
           <Route path="/product/:productId" element={<ProductDescription />} />
           <Route path="/checkout/:productId" element={<Checkout />} />
