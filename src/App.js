@@ -14,6 +14,7 @@ import Checkout from "../src/components/Checkout.js";
 import { Soon } from "./components/soon.js";
 import Login from "./components/Login.js";
 import Signup from "./components/Signup.js";
+import firebase from "firebase/compat/app";
 
 
 
