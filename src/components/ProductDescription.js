@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
-
-import "swiper/css";
 import "swiper/css";
 
 import { useParams } from "react-router-dom";
@@ -11,6 +9,17 @@ import productDetails from "../data/productDetails";
 export default function ProductDescription() {
   const { productId } = useParams();
   const clickProduct = productDetails.find((prod) => prod.id == productId);
+  // const [mainImage, setMainImage] = useState();
+  const [price, setPrice] = useState(clickProduct);
+
+  const handlePrice = (size) =>{
+    if(size === "S"){
+      setPrice(price.price + 1);
+      // console.log(price.price + 1);
+    }
+  }
+
+
 
   return (
     <div className="tc ma0 pa4 min-vh-100">
@@ -74,8 +83,8 @@ export default function ProductDescription() {
           <div className="size-sec-wrapper">
             <h3 className="product-desc-price">Size : </h3>
             <div className="size-sec">
-              {clickProduct.size.map((size, index) => (
-                <button className="size-box" key={index}>
+              {price.size.map((size, index) => (
+                <button onClick={() => handlePrice(size)} className="size-box" key={index}>
                   {size}
                 </button>
               ))}

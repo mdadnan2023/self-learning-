@@ -14,6 +14,7 @@ export default function Checkout() {
 
   const incrementQty = () => {
     setQuantity(quantity + 1);
+    
   };
 
   const decrementQty = () => {
