@@ -14,7 +14,6 @@ export default function Checkout() {
 
   const incrementQty = () => {
     setQuantity(quantity + 1);
-    
   };
 
   const decrementQty = () => {
@@ -29,36 +28,41 @@ export default function Checkout() {
 
   if (emptyCart) {
     return (
-      <>
-        <h1>Cart is empty</h1>
-        <Link to="/">Go to Homepage</Link>
-      </>
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding : "20px 0"
+        }}
+      >
+        <div>
+          <h1>Cart is empty</h1>
+          <Link className="btn btn-primary" to="/">
+            Go to Homepage
+          </Link>
+        </div>
+      </div>
     );
   }
 
   const fireAlert = () => {
-    
     Swal.fire({
-        title: 'Press OK to proceed and CANCEL for decline',
-        showConfirmButton: true,
-        showCancelButton: true,
-        confirmButtonText: "OK",
-        cancelButtonText: "Cancel",
-        icon: 'warning'
-    }
-    ).then((result) => {
-        if (result.isConfirmed) {
-
-            Swal.fire('Your order is confirm', '', 'success');
-            navigate("/");
-
-        } else
-            Swal.fire(' Cancelled', '', 'error')
-
-    })
-    
-
-}
+      title: "Press OK to proceed and CANCEL for decline",
+      showConfirmButton: true,
+      showCancelButton: true,
+      confirmButtonText: "OK",
+      cancelButtonText: "Cancel",
+      icon: "warning",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire("Your order is confirm", "", "success");
+        navigate("/");
+      } else Swal.fire(" Cancelled", "", "error");
+    });
+  };
 
   return (
     <>
@@ -128,7 +132,9 @@ export default function Checkout() {
           <p>Total Products: ₹ {clickDescProduct.price * quantity}</p>
           <p>Delivery charges: ₹ 100</p>
           <h3>Grand Total: ₹ {clickDescProduct.price * quantity + 100}</h3>
-          <button onClick={fireAlert} className="checkout-button">Place Order</button>
+          <button onClick={fireAlert} className="checkout-button">
+            Place Order
+          </button>
         </div>
       </div>
     </>

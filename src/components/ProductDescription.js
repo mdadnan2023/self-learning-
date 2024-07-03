@@ -9,15 +9,22 @@ import productDetails from "../data/productDetails";
 export default function ProductDescription() {
   const { productId } = useParams();
   const clickProduct = productDetails.find((prod) => prod.id == productId);
-  // const [mainImage, setMainImage] = useState();
-  const [price, setPrice] = useState(clickProduct);
 
-  const handlePrice = (size) =>{
-    if(size === "S"){
-      setPrice(price.price + 1);
-      // console.log(price.price + 1);
+  const [mainProduct, setMainProduct] = useState(clickProduct);
+
+  const handlePrice = (size) => {
+    if (size === "S") {
+      setMainProduct(prevProduct => ({...prevProduct,price: prevProduct.price - 80}));
+      setMainProduct(prevProduct =>({...prevProduct,quantity: prevProduct.quantity - 2}));
     }
-  }
+    if (size === "M") {
+      setMainProduct(prevProduct => ({...prevProduct,price: prevProduct.price - 20}));
+    }
+    if (size === "XL") {
+      setMainProduct(prevProduct => ({...prevProduct,price: prevProduct.price + 80}));
+    }
+
+  };
 
 
 
@@ -27,7 +34,7 @@ export default function ProductDescription() {
         <div className="product-image-slider w-50 p-4">
           <div className="product-image-wrapper">
             <div className="sidebar-img-sec">
-              {clickProduct.img.map((image, index) => (
+              {mainProduct.img.map((image, index) => (
                 <figure class="sidebar-img-wrapper" key={index}>
                   <img src={image} alt="new" />
                 </figure>
@@ -38,7 +45,7 @@ export default function ProductDescription() {
               pagination={{ clickable: true }}
               className="mySwiper swiper-card-wrapper"
             >
-              {clickProduct.img.map((image, index) => (
+              {mainProduct.img.map((image, index) => (
                 <SwiperSlide className="swiper-card" key={index}>
                   <img src={image} alt="new" />
                 </SwiperSlide>
@@ -59,19 +66,19 @@ export default function ProductDescription() {
         </div>
         <div className="product-description w-50">
           <h1 className="product-desc-title">
-            {clickProduct.brand} {clickProduct.name}
+            {mainProduct.brand} {mainProduct.name}
           </h1>
           <h3 className="product-desc-price">Price : </h3>
           <div className="price-sec">
             <div className="price-box">
               <span style={{ textDecoration: "line-through" }}>
-                ₹{clickProduct.price}
+                ₹{mainProduct.price}
               </span>
               <p>M.R.P</p>
             </div>
             <div className="price-box">
               <span style={{ color: "#008000" }}>
-                ₹{clickProduct.price * (40 / 100)}
+                ₹{mainProduct.price * (40 / 100)}
               </span>
               <p>Selling Price</p>
             </div>
@@ -83,28 +90,28 @@ export default function ProductDescription() {
           <div className="size-sec-wrapper">
             <h3 className="product-desc-price">Size : </h3>
             <div className="size-sec">
-              {price.size.map((size, index) => (
+              {mainProduct.size.map((size, index) => (
                 <button onClick={() => handlePrice(size)} className="size-box" key={index}>
                   {size}
                 </button>
               ))}
             </div>
           </div>
-          {/* <div className="quantity-sec-wrapper mt-5">
-            <h3 className="product-desc-price">Available Quantity : <span className="avail-num">{clickProduct.quantity}</span></h3>
-          </div> */}
+          <div className="quantity-sec-wrapper mt-5">
+            <h3 className="product-desc-price">Available Quantity : <span className="avail-num">{mainProduct.quantity}</span></h3>
+          </div>
           <div className="quantity-sec-wrapper mt-5">
             <h3 className="product-desc-price">
               Product Details :
-              <p className="product-desc-detail">{clickProduct.description}</p>
+              <p className="product-desc-detail">{mainProduct.description}</p>
             </h3>
           </div>
           <div className="btn-sec">
             <button type="button" className="cart-btn">
-              <Link style={{color: "#FFFFFF"}} to={`/checkout/${clickProduct.id}`}>BUY NOW</Link>
+              <Link style={{color: "#FFFFFF"}} to={`/checkout/${mainProduct.id}`}>BUY NOW</Link>
             </button>
             <button type="button" className="cart-btn">
-              <Link style={{color: "#FFFFFF"}} to={`/checkout/${clickProduct.id}`}>ADD TO CART</Link>
+              <Link style={{color: "#FFFFFF"}} to={`/checkout/${mainProduct.id}`}>ADD TO CART</Link>
             </button>
           </div>
           <div className="quantity-sec-wrapper mt-5">
