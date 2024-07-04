@@ -1,27 +1,28 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Searching({ product }) {
   const [products, setProducts] = useState(product);
-  const [searchVal, setSearchVal] = useState("");
+  // const [searchVal, setSearchVal] = useState("");
 
-  function handleSearchClick() {
-    if (searchVal === "") {
-      setProducts(product);
-      return;
-    }
-    const filterBySearch = product.filter((item) => {
-      if (
-        item.name.toLowerCase().includes(searchVal.toLowerCase()) ||
-        item.category.toLowerCase().includes(searchVal.toLowerCase())
-      ) {
-        return item;
-      }
-    });
-    setProducts(filterBySearch);
-  }
+  // function handleSearchClick() {
+  //   if (searchVal === "") {
+  //     setProducts(product);
+  //     return;
+  //   }
+  //   const filterBySearch = product.filter((item) => {
+  //     if (
+  //       item.name.toLowerCase().includes(searchVal.toLowerCase()) ||
+  //       item.category.toLowerCase().includes(searchVal.toLowerCase())
+  //     ) {
+  //       return item;
+  //     }
+  //   });
+  //   setProducts(filterBySearch);
+  // }
   return (
     <div className="tc ma0 pa4 min-vh-100">
-      <div className="my-style">
+      {/* <div className="my-style">
         <input
           placeholder="search..."
           onChange={(e) => setSearchVal(e.target.value)}
@@ -29,7 +30,7 @@ function Searching({ product }) {
         <button className="search-btn" onClick={handleSearchClick}>
           🔍
         </button>
-      </div>
+      </div> */}
       <div className="c-card-sec">
         {products.map((product) => {
           return (

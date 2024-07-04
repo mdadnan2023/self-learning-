@@ -621,3 +621,8 @@ th {
   -webkit-text-color: transparent;
   opacity: 0.3;
 }
+.page-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
