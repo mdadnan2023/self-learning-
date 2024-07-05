@@ -48,9 +48,7 @@ export default function Signup() {
         </button>
         <span style={{ marginTop: "20px" }}>
           Existing User{" "}
-          <Link className="btn btn-outline-primary" to="/Login">
-            Login
-          </Link>
+          <Link className="btn btn-outline-primary" to="/Login">Login</Link>
         </span>
       </form>
     </div>

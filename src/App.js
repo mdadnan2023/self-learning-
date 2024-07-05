@@ -28,7 +28,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Soon" element={<Soon />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/Login" element={<Login navCom={Navbar} />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="*" element={<Error />} />
           <Route path="/product/:productId" element={<ProductDescription />} />
