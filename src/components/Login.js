@@ -4,10 +4,11 @@ import { useState } from "react";
 import { auth } from "../firebase-config";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
-export default function Login() {
+export default function Login({navCom}) {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -24,6 +25,7 @@ export default function Login() {
   return (
     <div className="page-wrapper">
       <form onSubmit={handleSubmit} className="form-wrapper">
+      <h2>Log in</h2>
         <label>Enter Your Email</label>
         <input
           className="form-control"
